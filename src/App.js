@@ -3,7 +3,7 @@ import './App.css'
 import React from 'react'
 import { List } from './list'
 import { View } from './view'
-
+import { Login } from './login';
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,6 +22,9 @@ const App = () => {
       <Switch>
         <Route exact path='/'>
           <List />
+        </Route>
+        <Route exact path='/login'>
+          <Login />
         </Route>
         <Route path='/view/:id/:blah'>
           <View />
